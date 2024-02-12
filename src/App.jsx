@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import { useEffect } from 'react'
+import { PokemonList } from './components/PokemonList/PokemonList/PokemonList'
 
 function App() {
 
@@ -18,7 +19,8 @@ function App() {
   
   return (
     <>
-      <h1>Test</h1>
+      <h1>Mon Pokedex</h1>
+      <PokemonList pokemons={pokemons} />
     </>
   )
 }

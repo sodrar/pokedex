@@ -1,0 +1,9 @@
+body {
+  width: 1400px;
+  background-color: coral;
+  margin: auto;
+}
+
+body, html { 
+  font-family: 'Vazir', sans-serif;
+}
