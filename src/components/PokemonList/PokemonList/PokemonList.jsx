@@ -1,4 +1,6 @@
 import './PokemonList.css'
+import { Pokemon } from '../Pokemon/Pokemon'
+import { SearchBar } from '../../SearchBar/SearchBar'
 
 export function PokemonList({ pokemons }) {
 
@@ -10,11 +12,12 @@ export function PokemonList({ pokemons }) {
         </div>
     })
 
-    return <>
+    return <div className='pokeview'>
         <div className='liste'>
             {elems.map(elem => {
                 return elem
             })}
         </div>
-    </>
+        <Pokemon className="pokemon" />
+    </div>
 }

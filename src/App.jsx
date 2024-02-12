@@ -6,6 +6,7 @@ import { PokemonList } from './components/PokemonList/PokemonList/PokemonList'
 function App() {
 
   const [pokemons, setPokemons] = useState([])
+  const [clicked, setCLicked] = useState(1)
 
   useEffect(() => {
     const fetchPokes = async () => {
@@ -19,7 +20,7 @@ function App() {
   
   return (
     <>
-      <h1>Mon Pokedex</h1>
+      <h1>PokeDex de Soso</h1>
       <PokemonList pokemons={pokemons} />
     </>
   )
